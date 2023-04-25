@@ -1,8 +1,8 @@
 import React from "react";
-import "./Main.css";
+import styles from "./Main.module.css"
 
 const Main = () => {
-  return <div>Main</div>;
+  return <div><a href="#main" className={styles.container}>ola</a></div>;
 };
 
 export default Main;

@@ -1,2 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@;400;700;800&display=swap");
 
+:root {
+  --bg: hsl(36, 100%, 99%);
+  --btn-hover: hsl(5, 85%, 63%);
+  --text-hovernew: hsl(35, 77%, 62%);
+  --text: hsl(236, 13%, 42%);
+  --number: hsl(233, 8%, 79%);
+  --bg-new-titles: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+}
+
+h1,
+h4,
+h5,
+h6 {
+  color: var(--bg-new-titles);
+}
+
+h2 {
+  color: var(--text-hovernew);
+}
+
+h3 {
+  color: var(--bg);
+}
+
+a,
+p,
+span {
+  color: var(--text);
+}
+
+p {
+  font-size: 15px;
+}
+
+button {
+  background: var(--bg-new-titles);
+  color: var(--bg);
+}
+
+h3:hover {
+  color: var(--text-hovernew);
+}
+
+a:hover,
+h4:hover {
+  transition: 0.4s;
+  color: var(--btn-hover);
+}
+
+button:hover {
+  background: var(--btn-hover);
+}
