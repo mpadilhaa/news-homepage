@@ -1,11 +1,51 @@
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 20px 0;
+}
+.container button {
+  border: none;
+  background: none;
+  font-size: 30px;
+}
+
+.mobileIcon button {
+  position: absolute;
+  top: 35px;
+  right: 5%;
+  z-index: 10;
 }
 
 .navbar {
+  width: 70vw;
+  height: 100vh;
+  position: absolute;
+  background: var(--bg);
   display: flex;
-  gap: 25px;
+  flex-direction: column;
+  padding: 120px 20px;
+  gap: 20px;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.navbarDesktop {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 40px;
+  right: 5%;
+}
+
+@media (min-width:640px){
+  .container{
+    margin: 30px 0;
+  }
+}
+
+@media (min-width:1000px){
+  .container{
+    margin: 40px 0;;
+  }
 }
